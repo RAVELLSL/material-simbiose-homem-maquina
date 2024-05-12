@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -68,36 +69,41 @@
     padding-bottom: 10px;
 }
 
-        @media screen and (max-width: 600px) {
-            .book {
-                width: auto;
-                border-radius: 0;
-            }
-
-            .cover {
-                border-radius: 0;
-                width: auto; /* Ajusta a largura do fundo do título */
-                 margin: 0 auto; /* Centraliza o título horizontalmente */
-            }
-
-            .cover h1 {
-        font-size: 20px; /* Diminui o tamanho da fonte */
+@media screen and (max-width: 600px) {
+    .book {
+        width: auto;
+        border-radius: 0;
     }
 
+    .cover {
+        border-radius: 0;
+        width: auto; /* Ajusta a largura do fundo do título */
+        margin: 0 auto; /* Centraliza o título horizontalmente */
+        text-align: center; /* Centraliza o texto do título */
+    }
 
+    .cover h1 {
+        font-size: 20px; /* Diminui o tamanho da fonte */
+        text-align: center; /* Centraliza o título */
+    }
 
-            .page h2 {
-            text-align: center;
-            }
+    .page {
+        text-align: left; /* Alinha o texto à esquerda */
+        font-size: 1em; /* Tamanho de fonte automático, relativo ao ambiente */
+    }
 
-            
-            .image-container {
-                float: none;
-                margin-right: 0;
-                margin-bottom: 20px;
-                text-align: center;
-            }
-        }
+    .page h2 {
+        text-align: center; /* Centraliza os títulos dentro da .page */
+    }
+
+    .image-container {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
     </style>
 </head>
 <body>
